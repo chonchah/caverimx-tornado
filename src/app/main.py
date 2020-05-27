@@ -44,7 +44,7 @@ def main():
     application = tornado.web.Application([
         
         (r"/websocket",handlers.websocket.WebSocket),
-        (r"/index.py", MainHandler),
+        (r"/", MainHandler),
         (r"/(.*)", tornado.web.StaticFileHandler, dict(path=settings['static_path']) ),
         ], **settings)
 
