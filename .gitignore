@@ -7,3 +7,4 @@ logs/caddy/*.log
 /.project
 .docker-sync
 .DS_Store
+*/__pycache__
