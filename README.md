@@ -27,12 +27,12 @@ cp src/app/env-example src/app/.env
 ```
 ## INIT DOCKER CONTAINER
 ```bash
-cd ../docker-services
+cd docker-services
 docker-compose up
 ```
 ## OUTPUT
 ```bash
-PS C:\Users\52354\caverimx-tornado> cd ../docker-services
+PS C:\Users\52354\caverimx-tornado> cd docker-services
 PS C:\Users\52354\caverimx-tornado\docker-services> docker-compose up
 Recreating docker-services_app_1  ... done
 Recreating docker-services_bash_1 ... done
