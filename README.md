@@ -30,3 +30,20 @@ cd docker-services
 docker-compose up
 ```
 ## OUTPUT
+```bash
+PS C:\Users\52354\caverimx-tornado> cd docker-services
+PS C:\Users\52354\caverimx-tornado\docker-services> docker-compose up
+Recreating docker-services_app_1  ... done
+Recreating docker-services_bash_1 ... done
+Recreating docker-services_caddy_1 ... done
+Attaching to docker-services_bash_1, docker-services_app_1, docker-services_caddy_1
+bash_1   | 
+docker-services_bash_1 exited with code 0
+caddy_1  | Activating privacy features... done.
+caddy_1  |
+caddy_1  | Serving HTTP on port 80
+caddy_1  | http://0.0.0.0
+caddy_1  |
+caddy_1  | 2020/07/11 17:44:15 [INFO] Serving http://0.0.0.0 
+```
+You can visit http://ip.machine:80
