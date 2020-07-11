@@ -47,4 +47,6 @@ caddy_1  | http://0.0.0.0
 caddy_1  |
 caddy_1  | 2020/07/11 17:44:15 [INFO] Serving http://0.0.0.0 
 ```
+
+# Happy Codding
 You can visit http://ip.machine:80
