@@ -26,6 +26,7 @@ cp docker-services/env-example docker-services/.env
 ```
 ## INIT DOCKER CONTAINER
 ```bash
-cd docker-services && docker-compose up
+cd docker-services
+docker-compose up
 ```
 ## OUTPUT
