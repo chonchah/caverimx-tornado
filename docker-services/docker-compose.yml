@@ -7,8 +7,8 @@ services:
     build: ./app
     ports:
       - "4311:4311"
-    environment: 
-      - APP_NAME=${APP_NAME}
+    env_file: 
+      - ${ENV_FILE}
     volumes:
       - '${APP_CODE_PATH_HOST}:/app'
       - '${APP_CODE_PATH_HOST}/../recursos:/recursos'

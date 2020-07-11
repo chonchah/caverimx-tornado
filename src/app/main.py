@@ -22,36 +22,19 @@ import os
 import handlers.websocket
 from jinja2 import Template
 from tornado.options import define, options
-
+import router
 from caverimx.helpers import TemplateLoader
 
 define("port", default=4311, help="run on the given port", type=int)
 
-settings={
-    'static_path':'/recursos/public',
-}
-
-template_loader = TemplateLoader('/recursos/vistas')
-
-class MainHandler(tornado.web.RequestHandler):
-    def get(self):
-        template = template_loader.get('landing/index.pyml')
-        self.write(template.render(env=os.environ))
- 
 def main():
     tornado.options.parse_command_line()
     
-    application = tornado.web.Application([
-        
-        (r"/websocket",handlers.websocket.WebSocket),
-        (r"/", MainHandler),
-        (r"/(.*)", tornado.web.StaticFileHandler, dict(path=settings['static_path']) ),
-        ], **settings)
+    application = tornado.web.Application(router.routes, **router.settings)
 
     http_server = tornado.httpserver.HTTPServer(application)
     http_server.listen(options.port)
     tornado.ioloop.IOLoop.current().start()
-
 
 if __name__ == "__main__":
     main()
