@@ -9,7 +9,7 @@
 
 Clone this repo.
 ```bash
-git clone https://gitlab.com/caverimx/caverimx-tornado.git
+git clone https://gitlab.com/caverimx/caverimx-tornado.git webapp
 cd caverimx-tornado
 ```
 
