@@ -23,6 +23,7 @@ Edit docker's environments file for docker. Inside repository directory run and 
 
 ```bash
 cp docker-services/env-example docker-services/.env
+cp src/app/env-example src/app/.env
 ```
 ## INIT DOCKER CONTAINER
 ```bash
