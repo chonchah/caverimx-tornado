@@ -12,11 +12,6 @@ services:
     volumes:
       - '${APP_CODE_PATH_HOST}:/app'
       - '${APP_CODE_PATH_HOST}/../recursos:/recursos'
-  bash:
-    image: 'bash'
-    build: ./bash
-    volumes: 
-      - '../src:/app'
     
 ### Caddy Server #########################################
   caddy:

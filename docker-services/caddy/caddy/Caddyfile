@@ -3,9 +3,9 @@
     root /recursos/public
     browse
     gzip
-    index index.py
+    index index.py index.html
     
-    proxy / app:4311 { transparent }
+    proxy /api app:4311 { transparent }
     proxy /websocket app:4311 {
 	    websocket
     }
