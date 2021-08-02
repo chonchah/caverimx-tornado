@@ -1,4 +1,0 @@
-tornado
-jinja2
-redis
-setuptools
