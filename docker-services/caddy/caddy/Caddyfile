@@ -5,8 +5,8 @@
     gzip
     index index.py index.html
     
-    proxy /api app:4311 { transparent }
-    proxy /websocket app:4311 {
+    proxy /api tornado:4311 { transparent }
+    proxy /websocket tornado:4311 {
 	    websocket
     }
     log /var/log/caddy/access.log
