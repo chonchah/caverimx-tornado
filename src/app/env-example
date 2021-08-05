@@ -1,3 +1,7 @@
 APP_NAME=CAVERIMX-TORNADO
 APP_URL=http://192.168.99.100/
 APP_VERSION=0.9
+
+### MONGO #################################################
+MONGO_INITDB_ROOT_USERNAME=root
+MONGO_INITDB_ROOT_PASSWORD=caverimx
