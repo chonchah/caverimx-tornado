@@ -8,4 +8,3 @@ logs/caddy/*.log
 .docker-sync
 .DS_Store
 */__pycache__/*
-docker-services/tornado/requirements.txt
